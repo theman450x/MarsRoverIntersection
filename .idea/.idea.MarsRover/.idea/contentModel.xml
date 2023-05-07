@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\denis\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\denis\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_MarsRover.94411822.00" t="ExcludeRecursive" />
+    <e p="C:\Users\denis\OneDrive\Developer\MarsRover" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="InputReader.cs" t="Include" />
+      <e p="MarsRover.csproj" t="IncludeRecursive" />
+      <e p="MarsRover.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.2" t="Include">
+            <e p="MarsRover.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Plateau.cs" t="Include" />
+      <e p="Program.cs" t="Include" />
+      <e p="README.md" t="Include" />
+      <e p="Rover.cs" t="Include" />
+    </e>
+  </component>
+</project>
