@@ -6,7 +6,7 @@
 3. Follow the instrtuction in the console
 
 ### Movement Options
-N, E, S, W, M(move)
+'N'(Up), 'S'(Down), 'E'(Right), and 'W'(Left), M(move)
 
 ### Output
 The output for each rover should be its final co-ordinates and direction and the intersection points
