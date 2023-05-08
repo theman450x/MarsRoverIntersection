@@ -3,7 +3,7 @@
 ### Usage
 1. Clone the project
 2. Run the Main method of Program.cs file 
-3. Follow the instrtuction in the cosole
+3. Follow the instrtuction in the console
 
 ### Movement Options
 N, E, S, W, M(move)
