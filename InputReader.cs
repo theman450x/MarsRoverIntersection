@@ -1,11 +1,9 @@
-﻿using System;
-using System.IO;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace MarsRover
 {
 
-    public class InputReader
+    public sealed class InputReader
     {
         private Plateau _plateau;
         

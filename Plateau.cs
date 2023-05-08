@@ -1,6 +1,6 @@
 ﻿namespace MarsRover
 {
-    public class Plateau
+    public sealed class Plateau
     {
         public int PlateauWidth { get; }
         public int PlateauHeight { get; }

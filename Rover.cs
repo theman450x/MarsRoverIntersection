@@ -1,9 +1,8 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates;
+﻿
 
 namespace MarsRover
 {
-    public class Rover
+    public sealed class Rover
     {
         private Coordinate Position { get; set; } = new Coordinate();
         private string Facing { get; set; }
@@ -13,7 +12,7 @@ namespace MarsRover
         {
             var coordinates = inputCoordinates.Split(' ');
             var commands = inputCommands.ToCharArray();
-            var rotationCommands = new char[]{'L', 'R'};
+            var rotationCommands = new char[] { 'L', 'R' };
 
             Position.XCoordinate = int.Parse(coordinates[0]);
             Position.YCoordinate = int.Parse(coordinates[1]);
@@ -21,32 +20,32 @@ namespace MarsRover
 
             if (!IsRoverInPlateau(plateau))
             {
-                Console.WriteLine("Rover is not in plateau.");
+                Console.WriteLine("Rover is not in the plateau.");
 
                 return;
             }
 
-            //"M" - move rover
-            //"L" or "R" - rotate rover
+            //"M" : Move rover
+            //"L" or "R" : Rotate rover
             foreach (var command in commands)
             {
                 if (command.Equals('M'))
                 {
                     MoveRover();
 
-                    //Newing coordinate to prevent unwanted references
+                    //Newing Coordinate to prevent unwanted references
                     Path.Add(new Coordinate(Position.XCoordinate, Position.YCoordinate));
                 }
-                else if (rotationCommands.Contains(command))    
+                else if (rotationCommands.Contains(command))
                 {
                     RotateRover(command);
                 }
 
             }
-            
+
             Console.WriteLine("Rover ends at: " + Position.XCoordinate + " " + Position.YCoordinate + " " + Facing);
         }
-        
+
         private void MoveRover()
         {
             switch (Facing)
@@ -65,7 +64,7 @@ namespace MarsRover
                     break;
             }
         }
-        
+
         private void RotateRover(char direction)
         {
             if (Char.ToUpper(direction).Equals('L'))
@@ -81,7 +80,7 @@ namespace MarsRover
                 Console.WriteLine("Cannot read a command.");
             }
         }
-        
+
         private bool IsRoverInPlateau(Plateau plateau)
         {
             return Position.XCoordinate >= 0 &&
@@ -89,7 +88,7 @@ namespace MarsRover
                    Position.YCoordinate >= 0 &&
                    Position.YCoordinate <= plateau.PlateauHeight;
         }
-        
+
         private void TurnRoverLeft()
         {
             switch (Facing)
@@ -108,7 +107,7 @@ namespace MarsRover
                     break;
             }
         }
-        
+
         private void TurnRoverRight()
         {
             switch (Facing)
