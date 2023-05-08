@@ -5,6 +5,9 @@
 2. Run the Main method of Program.cs file 
 3. Follow the instrtuction in the cosole
 
+### Movement Options
+N, E, S, W, M(move)
+
 ### Output
 The output for each rover should be its final co-ordinates and direction and the intersection points
 
